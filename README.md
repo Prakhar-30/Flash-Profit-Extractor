@@ -202,9 +202,14 @@ Prakhar Srivastava
 
 
 ## For Transactions
-[Approval Service](https://sepolia.etherscan.io/address/0xAaCc8a2D45a6427b9Dd1476f5D18599Fbb3B6Ac3#internaltx)
-[Swap1](https://sepolia.etherscan.io/address/0x7dE1dC9BCB8404Ff3ad80332C6266a770B1674BD)
-[Swap2](https://sepolia.etherscan.io/address/0xA9A9b11Ad815818dAcc0fe152E53c38cdf5675EA)
-[Swap3](https://sepolia.etherscan.io/address/0x008D7dD4925A3A901cD3276192351eaf0Cdf3fa7)
-[Staking](https://sepolia.etherscan.io/address/0x87caF149D75435F352bAc6A134afC3a069c3bf94#events)
-[StackingReactive](https://kopli.reactscan.net/rvm/0x49abe186a9b24f73e34ccae3d179299440c352ac)
+- [Approval Service](https://sepolia.etherscan.io/address/0xAaCc8a2D45a6427b9Dd1476f5D18599Fbb3B6Ac3#internaltx)
+
+- [Swap1](https://sepolia.etherscan.io/address/0x7dE1dC9BCB8404Ff3ad80332C6266a770B1674BD)
+
+- [Swap2](https://sepolia.etherscan.io/address/0xA9A9b11Ad815818dAcc0fe152E53c38cdf5675EA)
+
+- [Swap3](https://sepolia.etherscan.io/address/0x008D7dD4925A3A901cD3276192351eaf0Cdf3fa7)
+
+- [Staking](https://sepolia.etherscan.io/address/0x87caF149D75435F352bAc6A134afC3a069c3bf94#events)
+
+- [StackingReactive](https://kopli.reactscan.net/rvm/0x49abe186a9b24f73e34ccae3d179299440c352ac)
