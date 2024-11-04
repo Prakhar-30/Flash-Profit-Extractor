@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 export const PlatformInfo = ({ isDarkMode }) => {
   const [text, setText] = useState('');
-  const fullText = 'Unleash the power of decentralized arbitrage with our advanced Flash Profit Extractor. Secure, automated, and efficient cross-chain opportunities await.';
+  const fullText = 'Unleash the power of decentralized arbitrage with our advanced Flash Profit Extractor. Secure, automated, and efficient cross-swap opportunities await.';
   
   const links = [
     { name: 'Approval Service', url: 'https://sepolia.etherscan.io/address/0xAaCc8a2D45a6427b9Dd1476f5D18599Fbb3B6Ac3#internaltx' },
