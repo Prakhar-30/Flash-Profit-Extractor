@@ -1,4 +1,4 @@
-# FlashArb: Reactive Smart Contract Arbitrage Platform
+# Flash-Profit-Extractor: Reactive Smart Contract Arbitrage Platform
 
 ## Overview
 A novel arbitrage platform built on Reactive Network that optimizes trading strategies through dynamic pricing and automated approval-based swaps. The system leverages reactive smart contracts to enable efficient token swapping and real-time price monitoring.
