@@ -5,12 +5,13 @@ export const PlatformInfo = ({ isDarkMode }) => {
   const fullText = 'Unleash the power of decentralized arbitrage with our advanced Flash Profit Extractor. Secure, automated, and efficient cross-swap opportunities await.';
   
   const links = [
-    { name: 'Approval Service', url: 'https://sepolia.etherscan.io/address/0xAaCc8a2D45a6427b9Dd1476f5D18599Fbb3B6Ac3#internaltx' },
-    { name: 'Swap1', url: 'https://sepolia.etherscan.io/address/0x7dE1dC9BCB8404Ff3ad80332C6266a770B1674BD' },
-    { name: 'Swap2', url: 'https://sepolia.etherscan.io/address/0xA9A9b11Ad815818dAcc0fe152E53c38cdf5675EA' },
-    { name: 'Swap3', url: 'https://sepolia.etherscan.io/address/0x008D7dD4925A3A901cD3276192351eaf0Cdf3fa7' },
+    { name: 'Approval Service', url: 'https://sepolia.etherscan.io/address/0x204a2CD5A5c45289B0CD520Bc409888885a32B8d#internaltx' },
+    { name: 'Swap1', url: 'https://sepolia.etherscan.io/address/0x23281cF871394312D11BbBD655F0e3D297b87818' },
+    { name: 'Swap2', url: 'https://sepolia.etherscan.io/address/0x3A989f46c7cfED8a2aCB37603F6009c19303c4D4' },
+    { name: 'Swap3', url: 'https://sepolia.etherscan.io/address/0x05AeF00d0422c258cAe2cd51edA2bbc6d9B416A1' },
     { name: 'Staking', url: 'https://sepolia.etherscan.io/address/0x87caF149D75435F352bAc6A134afC3a069c3bf94#events' },
     { name: 'StackingReactive', url: 'https://kopli.reactscan.net/rvm/0x49abe186a9b24f73e34ccae3d179299440c352ac' },
+    { name: 'ApprovalReactive', url: 'https://kopli.reactscan.net/rvm/0xa7d9aa89cbcd216900a04cdc13eb5789d643176a/contract/0x2afafd298b23b62760711756088f75b7409f5967' },
   ];
 
   useEffect(() => {
