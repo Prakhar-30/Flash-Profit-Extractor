@@ -9,8 +9,8 @@ export const PlatformInfo = ({ isDarkMode }) => {
     { name: 'Swap1', url: 'https://sepolia.etherscan.io/address/0x23281cF871394312D11BbBD655F0e3D297b87818' },
     { name: 'Swap2', url: 'https://sepolia.etherscan.io/address/0x3A989f46c7cfED8a2aCB37603F6009c19303c4D4' },
     { name: 'Swap3', url: 'https://sepolia.etherscan.io/address/0x05AeF00d0422c258cAe2cd51edA2bbc6d9B416A1' },
-    { name: 'Staking', url: 'https://sepolia.etherscan.io/address/0x87caF149D75435F352bAc6A134afC3a069c3bf94#events' },
-    { name: 'StackingReactive', url: 'https://kopli.reactscan.net/rvm/0x49abe186a9b24f73e34ccae3d179299440c352ac' },
+    { name: 'Staking', url: 'https://sepolia.etherscan.io/address/0x098fFBF31e03c04f22022fA46b2B1bE879738ccF#events' },
+    { name: 'StackingReactive', url: 'https://kopli.reactscan.net/rvm/0x49abe186a9b24f73e34ccae3d179299440c352ac/contract/0x550B222897E72904C51228d34Bf6853f8f9172ae' },
     { name: 'ApprovalReactive', url: 'https://kopli.reactscan.net/rvm/0xa7d9aa89cbcd216900a04cdc13eb5789d643176a/contract/0x2afafd298b23b62760711756088f75b7409f5967' },
   ];
 
