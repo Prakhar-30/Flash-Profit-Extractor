@@ -6,7 +6,7 @@ const StakingSection = ({ isDarkMode, setShowArbitrageModal }) => {
   const [amount, setAmount] = useState('');
   const [stakedBalance, setStakedBalance] = useState('0');
   const [isLoading, setIsLoading] = useState(false);
-  const contractAddress = "0x1A99F9846551920BDB3768c70FDEfb12E48ed9BD"; // Replace with your deployed contract address
+  const contractAddress = "0x098fFBF31e03c04f22022fA46b2B1bE879738ccF"; // Replace with your deployed contract address
 
   // Initialize contract
   const getContract = async () => {
