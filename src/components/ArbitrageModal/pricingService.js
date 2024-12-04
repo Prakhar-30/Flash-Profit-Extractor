@@ -37,7 +37,7 @@ const tokenABI = [
 // Swap Configuration
 const SWAPS_CONFIG = [
   {
-    address: '0x7dE1dC9BCB8404Ff3ad80332C6266a770B1674BD',
+    address: '0x84862cFA327925206b188414e33717df2D0106D1',
     name: 'Swap 1',
     token0: {
       address: '0x6Af1483f4cFe00906bC6542B72279B871C502204', // Add token0 address
