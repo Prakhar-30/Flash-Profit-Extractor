@@ -61,7 +61,7 @@ export const TokenPrices = () => {
         >
           <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <h3 className="text-md font-semibold text-purple-200">{symbol}</h3>
-          <p className="text-sm font-bold text-white">${parseFloat(price).toFixed(6)}</p>
+          <p className="text-sm font-bold text-white">${parseFloat(price).toFixed(6)*1000}</p>
         </div>
       ))}
     </div>
