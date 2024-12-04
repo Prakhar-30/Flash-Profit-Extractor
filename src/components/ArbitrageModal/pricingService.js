@@ -37,7 +37,7 @@ const tokenABI = [
 // Swap Configuration
 const SWAPS_CONFIG = [
   {
-    address: '0x84862cFA327925206b188414e33717df2D0106D1',
+    address: '0x23281cF871394312D11BbBD655F0e3D297b87818',
     name: 'Swap 1',
     token0: {
       address: '0x6Af1483f4cFe00906bC6542B72279B871C502204', // Add token0 address
@@ -49,7 +49,7 @@ const SWAPS_CONFIG = [
     }
   },
   {
-    address: '0xA9A9b11Ad815818dAcc0fe152E53c38cdf5675EA',
+    address: '0x3A989f46c7cfED8a2aCB37603F6009c19303c4D4',
     name: 'Swap 2',
     token0: {
       address: '0x798585e2A8F308f89858B19d01BC915102FFf4Cc', // Add token0 address
@@ -61,7 +61,7 @@ const SWAPS_CONFIG = [
     }
   },
   {
-    address: '0x008D7dD4925A3A901cD3276192351eaf0Cdf3fa7',
+    address: '0x05AeF00d0422c258cAe2cd51edA2bbc6d9B416A1',
     name: 'Swap 3',
     token0: {
       address: '0x8611876cbADE782C5A600D41eD0Af00217F056Af', // Add token0 address
