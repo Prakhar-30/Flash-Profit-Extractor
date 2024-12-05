@@ -7,12 +7,18 @@ const StakingSection = ({ isDarkMode, setShowArbitrageModal }) => {
   const [stakedBalance, setStakedBalance] = useState('0');
   const [isLoading, setIsLoading] = useState(false);
   const contractAddress = "0x098fFBF31e03c04f22022fA46b2B1bE879738ccF"; // Replace with your deployed contract address
+  let balancePollingInterval = null;
 
   // Initialize contract
   const getContract = async () => {
     try {
+      if (!window.ethereum) throw new Error("No wallet found");
       const provider = new ethers.providers.Web3Provider(window.ethereum);
+
+      // Request accounts if not connected
+      await provider.send("eth_requestAccounts", []);
       const signer = provider.getSigner();
+
       return new ethers.Contract(contractAddress, STAKE, signer);
     } catch (error) {
       console.error("Error initializing contract:", error);
@@ -25,11 +31,33 @@ const StakingSection = ({ isDarkMode, setShowArbitrageModal }) => {
     try {
       const contract = await getContract();
       if (!contract) return;
-      
+
+      const signer = contract.signer;
+      const address = await signer.getAddress();
+      console.log("Connected address:", address);
+
       const balance = await contract.getStakedBalance();
-      setStakedBalance(ethers.utils.formatEther(balance));
+      const formattedBalance = ethers.utils.formatEther(balance);
+      setStakedBalance(formattedBalance);
     } catch (error) {
       console.error("Error fetching balance:", error);
+    }
+  };
+
+  // Start polling for balance
+  const startPollingBalance = () => {
+    if (balancePollingInterval) clearInterval(balancePollingInterval);
+
+    balancePollingInterval = setInterval(async () => {
+      await fetchStakedBalance();
+    }, 500); // Poll every 0.5 seconds
+  };
+
+  // Stop polling balance
+  const stopPollingBalance = () => {
+    if (balancePollingInterval) {
+      clearInterval(balancePollingInterval);
+      balancePollingInterval = null;
     }
   };
 
@@ -42,10 +70,10 @@ const StakingSection = ({ isDarkMode, setShowArbitrageModal }) => {
       if (!contract) return;
 
       const tx = await contract.stake({
-        value: ethers.utils.parseEther(amount)
+        value: ethers.utils.parseEther(amount),
       });
       await tx.wait();
-      
+
       setAmount('');
       await fetchStakedBalance();
     } catch (error) {
@@ -64,7 +92,7 @@ const StakingSection = ({ isDarkMode, setShowArbitrageModal }) => {
 
       const tx = await contract.withdraw();
       await tx.wait();
-      
+
       await fetchStakedBalance();
     } catch (error) {
       console.error("Error withdrawing:", error);
@@ -73,16 +101,23 @@ const StakingSection = ({ isDarkMode, setShowArbitrageModal }) => {
     }
   };
 
-  // Initial balance fetch
+  // Initial balance fetch and start polling
   useEffect(() => {
-    fetchStakedBalance();
+    if (window.ethereum) {
+      fetchStakedBalance();
+      startPollingBalance();
+    } else {
+      console.warn("MetaMask not detected");
+    }
+
+    return () => {
+      stopPollingBalance(); // Cleanup interval on component unmount
+    };
   }, []);
 
   // Update arbitrage modal access based on balance
   useEffect(() => {
-    if (parseFloat(stakedBalance) <= 0) {
-      setShowArbitrageModal(false);
-    }
+    setShowArbitrageModal(parseFloat(stakedBalance) > 0);
   }, [stakedBalance, setShowArbitrageModal]);
 
   return (
