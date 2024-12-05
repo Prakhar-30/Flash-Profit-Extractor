@@ -10,7 +10,7 @@ export const PlatformInfo = ({ isDarkMode }) => {
     { name: 'Swap2', url: 'https://sepolia.etherscan.io/address/0x3A989f46c7cfED8a2aCB37603F6009c19303c4D4' },
     { name: 'Swap3', url: 'https://sepolia.etherscan.io/address/0x05AeF00d0422c258cAe2cd51edA2bbc6d9B416A1' },
     { name: 'Staking', url: 'https://sepolia.etherscan.io/address/0x098fFBF31e03c04f22022fA46b2B1bE879738ccF#events' },
-    { name: 'StackingReactive', url: 'https://kopli.reactscan.net/rvm/0x49abe186a9b24f73e34ccae3d179299440c352ac/contract/0x550B222897E72904C51228d34Bf6853f8f9172ae' },
+    { name: 'StackingReactive', url: 'https://kopli.reactscan.net/rvm/0x49abe186a9b24f73e34ccae3d179299440c352ac/contract/0x8528951daacE37B21Bf16285024af458434bDCef' },
     { name: 'ApprovalReactive', url: 'https://kopli.reactscan.net/rvm/0xa7d9aa89cbcd216900a04cdc13eb5789d643176a/contract/0x2afafd298b23b62760711756088f75b7409f5967' },
   ];
 
